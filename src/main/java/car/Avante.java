@@ -1,12 +1,14 @@
-public class K5 extends Car {
+package car;
 
-    public K5(int tripDistance) {
+public class Avante extends Car {
+
+    public Avante(int tripDistance) {
         super(tripDistance);
     }
 
     @Override
     double getDistancePerLiter() {
-        return 13;
+        return 15;
     }
 
     @Override

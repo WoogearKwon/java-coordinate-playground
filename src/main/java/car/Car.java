@@ -1,3 +1,5 @@
+package car;
+
 public abstract class Car {
     protected int tripDistance;
 
