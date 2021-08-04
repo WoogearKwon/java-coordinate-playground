@@ -1,5 +1,4 @@
 public class Sonata extends Car {
-    private final int distancePerLister = 10;
 
     public Sonata(int tripDistance) {
         super(tripDistance);
@@ -7,7 +6,7 @@ public class Sonata extends Car {
 
     @Override
     double getDistancePerLiter() {
-        return distancePerLister;
+        return 10;
     }
 
     @Override

@@ -1,5 +1,4 @@
 public class K5 extends Car {
-    private final int distancePerLister = 13;
 
     public K5(int tripDistance) {
         super(tripDistance);
@@ -7,7 +6,7 @@ public class K5 extends Car {
 
     @Override
     double getDistancePerLiter() {
-        return distancePerLister;
+        return 13;
     }
 
     @Override
