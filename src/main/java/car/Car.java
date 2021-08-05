@@ -17,7 +17,7 @@ public abstract class Car {
      */
     double getTripDistance() {
         return tripDistance;
-    };
+    }
 
     /**
      * 차종의 이름
