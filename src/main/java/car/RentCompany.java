@@ -4,13 +4,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RentCompany {
-    private List<Car> cars = new ArrayList<>();
+    private final List<Car> cars = new ArrayList<>();
 
     public void addCar(Car car) {
         cars.add(car);
     }
 
     public String generateReport() {
-        return "null";
+        StringBuilder report = new StringBuilder();
+        for (Car car : cars) {
+            report.append(getCarReport(car));
+            report.append("\n");
+        }
+
+        return report.toString();
+    }
+
+    private String getCarReport(Car car) {
+        return car.getName() + " : " + (int) car.getChargeQuantity() + "리터";
     }
 }
