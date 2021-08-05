@@ -16,12 +16,7 @@ public class RentCompanyTest {
         company.addCar(new Avante(300));
         company.addCar(new K5(390));
 
-        String report = company.generateReport(new CarReporter() {
-            @Override
-            public String makeReport(Car car) {
-                return getCarReport(car);
-            }
-        });
+        String report = company.generateReport(this::getCarReport);
         assertThat(report).isEqualTo(
                 "Sonata : 15리터" + NEWLINE +
                         "K5 : 20리터" + NEWLINE +
