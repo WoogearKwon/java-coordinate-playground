@@ -12,8 +12,8 @@ public class CoordinatesTest {
 
     @Test
     void create() {
-        Coordinate coordinateOne = new Coordinate("10, 3");
-        Coordinate coordinateTwo = new Coordinate("10, 12");
+        Coordinate coordinateOne = new Coordinate("3, 3");
+        Coordinate coordinateTwo = new Coordinate("1, 1");
 
         List<Coordinate> list = new ArrayList<>();
         list.add(coordinateOne);
