@@ -1,8 +1,8 @@
 package coordinate;
 
-public class Coordinate {
-    private final static int MAX_NUM = 24;
+import static coordinate.Const.MAX_COORDINATE;
 
+public class Coordinate {
     private final int x;
     private final int y;
 
@@ -14,7 +14,7 @@ public class Coordinate {
         this.x = Integer.parseInt(inputNumbers[0]);
         this.y = Integer.parseInt(inputNumbers[1]);
 
-        if (x > MAX_NUM || y > MAX_NUM) {
+        if (x > MAX_COORDINATE || y > MAX_COORDINATE) {
             throw new IllegalArgumentException("Coordinate number cannot be bigger than 24");
         }
     }
