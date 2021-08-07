@@ -19,6 +19,14 @@ public class Coordinate {
         }
     }
 
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
     @Override
     public String toString() {
         return "Coordinate{" + "x=" + x + ", y=" + y + '}';

@@ -12,7 +12,7 @@ public class CoordinatesTest {
 
     @Test
     void create() {
-        Coordinate coordinateOne = new Coordinate("1, 3");
+        Coordinate coordinateOne = new Coordinate("10, 3");
         Coordinate coordinateTwo = new Coordinate("10, 12");
 
         List<Coordinate> list = new ArrayList<>();
