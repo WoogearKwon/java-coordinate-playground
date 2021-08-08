@@ -13,17 +13,12 @@ public class Coordinates {
         }
 
         coordinates = list;
-        GraphView.printGraph(getDistance(), coordinates);
+        double distance = coordinates.get(0).getDistance(coordinates.get(1));
+        
+        GraphView.printGraph(distance, coordinates);
     }
 
     public int getItemSize() {
         return coordinates.size();
-    }
-
-    private double getDistance() {
-        double distanceX = coordinates.get(0).getDistanceX(coordinates.get(1));
-        double distanceY = coordinates.get(0).getDistanceY(coordinates.get(1));
-
-        return Math.sqrt((Math.pow(distanceX, 2) + Math.pow(distanceY, 2)));
     }
 }
