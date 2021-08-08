@@ -27,6 +27,19 @@ public class Coordinate {
         return y;
     }
 
+    public double getDistance(Coordinate coordinate) {
+        return Math.sqrt((Math.pow(getDistanceX(coordinate), 2))
+                + (Math.pow(getDistanceY(coordinate), 2)));
+    }
+
+    public double getDistanceX(Coordinate coordinate) {
+        return Math.abs(getX() - coordinate.getX());
+    }
+
+    public double getDistanceY(Coordinate coordinate) {
+        return Math.abs(getY() - coordinate.getY());
+    }
+
     @Override
     public String toString() {
         return "Coordinate{" + "x=" + x + ", y=" + y + '}';

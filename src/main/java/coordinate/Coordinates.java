@@ -21,8 +21,8 @@ public class Coordinates {
     }
 
     private double getDistance() {
-        double distanceX = coordinates.get(0).getX() - coordinates.get(1).getX();
-        double distanceY = coordinates.get(0).getY() - coordinates.get(1).getY();
+        double distanceX = coordinates.get(0).getDistanceX(coordinates.get(1));
+        double distanceY = coordinates.get(0).getDistanceY(coordinates.get(1));
 
         return Math.sqrt((Math.pow(distanceX, 2) + Math.pow(distanceY, 2)));
     }
