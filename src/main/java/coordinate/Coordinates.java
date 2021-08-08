@@ -13,12 +13,14 @@ public class Coordinates {
         }
 
         coordinates = list;
-        double distance = coordinates.get(0).getDistance(coordinates.get(1));
-        
-        GraphView.printGraph(distance, coordinates);
+        GraphView.printGraph(getDistance(), coordinates);
     }
 
     public int getItemSize() {
         return coordinates.size();
+    }
+
+    public double getDistance() {
+        return coordinates.get(0).getDistance(coordinates.get(1));
     }
 }
